@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HipodromoReservas.API", "HipodromoReservas.API\HipodromoReservas.API.csproj", "{FCA5E0BA-1208-4C2F-B128-9E8C63009F2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HipodromoReservas.Application", "HipodromoReservas.Application\HipodromoReservas.Application.csproj", "{3CBC50F1-0B2F-4823-8064-B2BB7F4BEF61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HipodromoReservas.Domain", "HipodromoReservas.Domain\HipodromoReservas.Domain.csproj", "{EDE7815C-EE3D-49CD-B279-D31A303042F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HipodromoReservas.Infrastructure", "HipodromoReservas.Infrastructure\HipodromoReservas.Infrastructure.csproj", "{A972805C-E74D-4C66-8B5E-EAAC5EE813D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HipodromoReservas.Tests", "HipodromoReservas.Tests\HipodromoReservas.Tests.csproj", "{4DD8F130-1DF6-46D6-B136-37B67C848030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA5E0BA-1208-4C2F-B128-9E8C63009F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA5E0BA-1208-4C2F-B128-9E8C63009F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA5E0BA-1208-4C2F-B128-9E8C63009F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA5E0BA-1208-4C2F-B128-9E8C63009F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBC50F1-0B2F-4823-8064-B2BB7F4BEF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBC50F1-0B2F-4823-8064-B2BB7F4BEF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBC50F1-0B2F-4823-8064-B2BB7F4BEF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBC50F1-0B2F-4823-8064-B2BB7F4BEF61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE7815C-EE3D-49CD-B279-D31A303042F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE7815C-EE3D-49CD-B279-D31A303042F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE7815C-EE3D-49CD-B279-D31A303042F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE7815C-EE3D-49CD-B279-D31A303042F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A972805C-E74D-4C66-8B5E-EAAC5EE813D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A972805C-E74D-4C66-8B5E-EAAC5EE813D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A972805C-E74D-4C66-8B5E-EAAC5EE813D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A972805C-E74D-4C66-8B5E-EAAC5EE813D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD8F130-1DF6-46D6-B136-37B67C848030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD8F130-1DF6-46D6-B136-37B67C848030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD8F130-1DF6-46D6-B136-37B67C848030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD8F130-1DF6-46D6-B136-37B67C848030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

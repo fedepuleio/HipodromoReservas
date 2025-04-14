@@ -1,0 +1,30 @@
+# === BACKEND (.NET) ===
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.dbmdl
+TestResults/
+*.log
+*.pdb
+*.cache
+
+# === FRONTEND (Angular) ===
+node_modules/
+dist/
+out-tsc/
+.angular/
+npm-debug.log
+yarn-error.log
+
+# === VSCODE ===
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# === SYSTEM ===
+.DS_Store
+Thumbs.db
