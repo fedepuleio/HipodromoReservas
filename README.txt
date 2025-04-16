@@ -11,6 +11,8 @@ ubicado en el **Hipódromo de Palermo**.
 - Lista de espera cuando no hay mesas libres.
 - Reasignación automática de mesas al cancelar una reserva.
 
+-------------------------------------------------------------------------------------------
+
 ### Reglas de negocio consideradas en el desarrollo:
 
 - Las reservas tienen una duracion de 1.30hs.
@@ -23,28 +25,24 @@ se agregó a la lista de espera.
 
 ## 📦 Tecnologías utilizadas
 
-### Backend
-- .NET 8.0
-- FluentAssertions
-- Moq
+### Backend			### Frontend
+- .NET 8.0			- Angular: 19.2.6
+- FluentAssertions		- PrimeNG
+- Moq				- Tailwind
 - XUnit
-
-### Frontend
-- Angular: 19.2.6
-- PrimeNG
-- Tailwind
 
 -------------------------------------------------------------------------------------------
 
 ## 🚀 Instrucciones para correr el proyecto
 
-### 0. Requisitos
+###. Requisitos
 - Visual Studio 
 - Visual Studio Code
+
 -------------------------------------------------------------------------------------------
 
 ### 1. Clonar el repositorio
-	- Elegir una carpeta de destin, abrir una consola con cmd y ejecutar el comando:
+	- Elegir una carpeta de destino, abrir una consola con cmd y ejecutar el comando:
 		git clone https://github.com/fedepuleio/HipodromoReservas.git
 
 -------------------------------------------------------------------------------------------
@@ -55,18 +53,18 @@ se agregó a la lista de espera.
 	- Ejecutar los comandos:
 		- npm i
 		- ng serve
-	- Una vez iniciada, la aplicación estará disponible en la dirección http://localhost:4200/.
+	- Una vez iniciada la aplicación, estará disponible en la dirección http://localhost:4200/.
 
 -------------------------------------------------------------------------------------------
 
 ### 3. Para correr la API
-	- En la carpeta HipodromoReservas > HipodromoReservas, 
+	- Ir a la carpeta HipodromoReservas > HipodromoReservas, 
 	  y abrir la solución HipodromoReservas.sln en Visual Studio.
 	- Seleccionar el proyecto HipodromoReservas.Api como proyecto de inicio. 
   	  (clic derecho sobre el proyecto y elegir la opción "establecer como proyecto de inicio.")
 	- Para ejecutar el proyecto, seleccionar de las opciones "https".
 	- Ejecutar con F5.
-	- Una vez iniciado, el mismo estará disponible en la direccion http://localhost:5298.
+	- Una vez iniciada la aplicación, estará disponible en la direccion http://localhost:5298.
 
 -------------------------------------------------------------------------------------------
 
@@ -74,11 +72,11 @@ se agregó a la lista de espera.
 
 Api
 	HipodromoReservas/
-	├── HipodromoReservas.Api/         # Proyecto API .NET
-	├── HipodromoReservas.Application/ # Lógica de aplicación
-	├── HipodromoReservas.Domain/      # Entidades de dominio y lógica de negocio
-	├── HipodromoReservas.Infrastructure/ # Repositorios y configuración EF
-	├── HipodromoReservas.Tests/       # Tests unitarios
+	├── HipodromoReservas.Api/         	# Proyecto API .NET
+	├── HipodromoReservas.Application/ 	# Lógica de aplicación
+	├── HipodromoReservas.Domain/      	# Entidades de dominio y lógica de negocio
+	├── HipodromoReservas.Infrastructure/ 	# Repositorios y configuración EF
+	├── HipodromoReservas.Tests/       	# Tests unitarios
 
 Front
 	hipodromo-web/         # Proyecto Angular
