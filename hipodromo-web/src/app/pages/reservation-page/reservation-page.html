@@ -1,0 +1,49 @@
+@if (isInitialized) 
+{
+    <div class="flex flex-col gap-4 justify-center items-center w-full">
+        <span class="text-slate-700">TUCSON</span>
+        <h4>Hipodromo de Palermo</h4>
+        
+        <app-reservation-create
+            (createReservation)="handleCreateReservation($event)"
+        ></app-reservation-create>
+        
+        <div class="flex flex-row gap-4">
+
+            @if (reservationsList.length > 0) 
+            {
+                <p-inplace>
+                    <ng-template #display>
+                        <p-button 
+                            label="Ver Reservas activas"
+                        ></p-button>  
+                    </ng-template>
+                    <ng-template #content>
+                        <app-reservation-list
+                            [reservations]="reservationsList"
+                            (deleteReservation)="deleteReservation($event)"
+                        ></app-reservation-list>
+                    </ng-template>
+                </p-inplace>
+            }
+
+            @if (waitingList.length > 0) 
+            {
+                <p-inplace>
+                    <ng-template #display>
+                        <p-button 
+                            label="Ver Lista de espera"
+                        ></p-button>
+                    </ng-template>
+                    <ng-template #content>
+                        <app-waiting-list
+                            [waitingList]="waitingList"
+                        ></app-waiting-list>
+                    </ng-template>
+                </p-inplace>
+            }
+        </div>
+
+        <p-confirmdialog/>
+    </div>
+}

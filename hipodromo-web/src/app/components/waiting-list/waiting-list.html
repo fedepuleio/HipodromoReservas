@@ -1,0 +1,25 @@
+<div *ngIf="waitingList.length > 0">
+    <p-table 
+        [value]="waitingList"
+        [paginator]="true"
+        [rows]="4"
+        [rowsPerPageOptions]="[5, 10, 20]"
+    >
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="clientName">
+                    Cliente <p-sortIcon field="clientName"/>
+                </th>
+                <th pSortableColumn="reservationDateTime">
+                    Fecha <p-sortIcon field="reservationDateTime"/>
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-entry>
+            <tr>
+            <td>{{ entry.clientName }}</td>
+            <td>{{ entry.reservationDateTime | date:'dd/MM/yyyy HH:mm' }}</td>           
+        </tr>
+        </ng-template>
+    </p-table>
+</div>

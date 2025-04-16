@@ -1,0 +1,58 @@
+<form 
+    [formGroup]="formGroup" 
+    class="flex flex-col gap-4 justify-center items-center min-w-full"
+    (ngSubmit)="onSubmit()"
+>
+    <span class="text-lg text-slate-700 text-center font-semibold">Nueva Reserva</span>
+
+    <div class="flex flex-row gap-4 w-full">
+        <p-floatlabel variant="in" class="flex-1 min-w-[11rem]">
+            <p-inputNumber 
+                formControlName="clientId" 
+            ></p-inputNumber>
+            <label for="clientId">N° Cliente</label>
+        </p-floatlabel>
+            
+        <p-floatlabel variant="in" class="flex-1 min-w-[11rem]">
+            <p-select 
+                formControlName="tableCapacity" 
+                [options]="tableCapacities" 
+                optionLabel="name"
+                optionValue="value"
+                class="w-full"
+            />
+            <label for="tableCapacity">Tamaño de la mesa</label>
+        </p-floatlabel>
+    </div>
+
+    <div class="flex flex-row gap-4 w-full">
+        <p-floatlabel variant="in" class="flex-1 min-w-[11rem]">
+            <p-datepicker 
+                formControlName="reservationDate"
+                dateFormat="dd/mm/yy"
+                [showIcon]="true"
+                [showTime]="false" 
+                [minDate]="minDate"
+                class="w-full"
+            />        
+            <label for="reservationDate">Fecha</label>
+        </p-floatlabel>
+
+        <p-floatlabel variant="in" class="flex-1 min-w-[11rem]">
+            <p-select 
+                formControlName="timeSlot" 
+                [options]="timeSlots" 
+                optionLabel="name"
+                optionValue="value"
+                class="w-full"
+            />
+            <label for="timeSlots">Hora</label>
+        </p-floatlabel>
+    </div>
+    
+    <p-button
+        label="Crear Reserva"
+        (click)="onSubmit()"
+        [disabled]="isLoading || this.formGroup.invalid">
+    </p-button>    
+</form>

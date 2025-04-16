@@ -1,0 +1,46 @@
+<div *ngIf="reservations.length > 0">
+    <p-table 
+        [value]="reservations"
+        [paginator]="true"
+        [rows]="4"
+        [rowsPerPageOptions]="[5, 10, 20]"
+    >
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="id">
+                    N° Reserva <p-sortIcon field="id"/>
+                </th>
+                <th pSortableColumn="clientId">
+                    Cliente <p-sortIcon field="clientId"/>
+                </th>
+                <th pSortableColumn="tableId">
+                    Mesa <p-sortIcon field="tableId"/>
+                </th>
+                <th pSortableColumn="reservationDateTime">
+                    Fecha <p-sortIcon field="reservationDateTime"/>
+                </th>
+                <th>Acciones</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-reservation>
+            <tr>
+            <td>{{ reservation.id }}</td>
+            <td>{{ reservation.clientId }}</td>
+            <td>{{ reservation.tableId }}</td>
+            <td>{{ reservation.reservationDateTime | date:'dd/MM/yyyy HH:mm' }}</td>
+            <td>
+                <span>
+                    <button
+                        pButton
+                        icon="pi pi-trash"
+                        (click)="onDelete(reservation.id)"
+                        severity="danger"
+                        tooltip="Eliminar reserva"
+                        tooltipPosition="top"
+                    ></button>
+                </span>
+            </td>
+        </tr>
+        </ng-template>
+    </p-table>
+</div>
