@@ -55,6 +55,7 @@ se agregó a la lista de espera.
 	- Ejecutar los comandos:
 		- npm i
 		- ng serve
+	- Una vez iniciada, la aplicación estará disponible en la dirección http://localhost:4200/.
 
 -------------------------------------------------------------------------------------------
 
