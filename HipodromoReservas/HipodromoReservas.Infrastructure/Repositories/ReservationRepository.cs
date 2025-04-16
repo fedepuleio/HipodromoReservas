@@ -19,7 +19,7 @@ namespace HipodromoReservas.Infrastructure.Repositories
         public async Task<List<Reservation>> GetAllAsync()
         {
             return await _context.Reservations
-                .OrderByDescending(r => r.ReservationDate)
+                .OrderBy(r => r.Id)
                 .ToListAsync();
         }
 
